@@ -10,3 +10,4 @@ console.log("App listening to: "+port)
 app.get('/', (req, res) => {
     res.send('Hello SUPU!')
   })
+  console.log("i hate you")
