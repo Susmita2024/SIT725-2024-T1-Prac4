@@ -34,8 +34,16 @@ const addCards =
   }
 
 $(document).ready(function () {
-  // $('.materialboxed').materialbox;
-  $('#clickMeButton').click(() => {
-    clickMe();
+  $('.materialboxed').materialbox();
+  $('#clickMeButton').click(function () {
+    $('modal1').modal('open');
   });
-})
+    $('#formSubmit').click(() => {
+      submitForm();
+    })
+  addCards(cardList);
+  $('modal').modal();
+  //$('#clickMeButton').click(() => {
+  //clickMe();
+});
+//});
