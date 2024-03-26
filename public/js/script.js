@@ -19,10 +19,17 @@ const clickMe = () => {
   alert("Thanks for clicking me. Wishing you to have a nice day!")
 }
 
-const addCards =
-  (items) => {
-    items.forEach(
-      item => {
+const submitForm = () => {
+  let formData = {};
+  formData.first_name = $('#first_name').val();
+  formData.last_name = $('#last_name').val();
+  formData.password = $('#password').val();
+  formData.email = $('#email').val();
+  console.log("Form Data Submitted: ", formData);
+}
+
+const addCards =(items) => {
+    items.forEach(item => {
         let itemToAppend = '<div class="col s4 center-align">' +
           '<div class="card medium"><div class="card-image waves-effect waves-block waves-light"><img class="activator" src="' + item.image + '">' +
           '</div><div class="card-content">' +
@@ -33,17 +40,16 @@ const addCards =
       });
   }
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('.materialboxed').materialbox();
   $('#clickMeButton').click(function () {
     $('modal1').modal('open');
   });
-    $('#formSubmit').click(() => {
-      submitForm();
-    })
+  $('#formSubmit').click(() => {
+    submitForm();
+  });
   addCards(cardList);
-  $('modal').modal();
+  $('.modal').modal();
   //$('#clickMeButton').click(() => {
   //clickMe();
 });
-//});
