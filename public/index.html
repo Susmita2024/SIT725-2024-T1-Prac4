@@ -2,30 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your title</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIT725 practical</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrapper navbar-size">
-        <a href="#" class="brand-logo"><img class="user-image-size" src="images/user-logo.PNG" width="50" height="70" /></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a target="_blank" href="https://www.linkedin.com/in/navit-choudhary5133b9104/">LinkedIn</a></li>
-        </ul>
-        </div>
-    </nav>
-    <h1>SIT725-2024-T1-Prac3</h1>
-    <div class="container">
-        <img src="images/livedemo.jpg" alt="live demo" width="300" height="400">
-        <button id="clickMeButton">Click me</button>
-
+  <nav>
+    <div class="nav-wrapper navbar-size">
+      <a href="#" class="brand-logo">
+        <img class="user-image-size" src="images/user-logo.PNG" alt="user logo" width="48" height="68" /></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a target="_blank" href="https://www.linkedin.com/in/susmita-giri-413841154/">LinkedIn</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <main class="main-body">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <h1 id="heading">Welcome to SIT 725 Week 3</h1>
+          <p class="flow-text">Through this practical I am learning Materialize and its components</p>
+        </div>
+        <div class="col s12 center-align">
+          <img class="materialboxed materialboxed-image" src="images/livedemo.jpg" alt="livedemo" height="400px">
+        </div>
+        <div class="col s12 center-align">
+          <a class="waves-effect waves-light btn click-me-button" id="clickMeButton"><i
+              class="material-icons left">auto_fix_high</i>Click Me</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s4 center-align">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/dog.PNG" alt="dog">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Dog<i
+                  class="material-icons right">more_vert</i></span>
+              <p><a href="#">About this Dog</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Dog<i class="material-icons right">close</i></span>
+              <p class="card-text">Hello I am Jackie and I am brown baby.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 center-align">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/dog2.PNG" alt="dog">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Dog<i
+                  class="material-icons right">more_vert</i></span>
+              <p><a href="#">About this Dog</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Dog<i class="material-icons right">close</i></span>
+              <p class="card-text">Hello I am Oscar and I am orange baby.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s4 center-align">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/dog3.PNG" alt="dog">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Dog<i
+                  class="material-icons right">more_vert</i></span>
+              <p><a href="#">About this Dog</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Dog<i class="material-icons right">close</i></span>
+              <p class="card-text">Hello I am Coco and I am mix brown and white baby.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
