@@ -24,4 +24,6 @@
     margin-top: 50px;
 }
 
-
+.card-reveal>p {
+    color:black;
+}

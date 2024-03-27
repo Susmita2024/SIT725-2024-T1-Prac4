@@ -20,6 +20,7 @@
         <img class="user-image-size" src="images/user-logo.PNG" alt="user logo" width="48" height="68" /></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a target="_blank" href="https://www.linkedin.com/in/susmita-giri-413841154/">LinkedIn</a></li>
+        <li><a target="blank" href="https://github.com/Susmita2024/SIT725-2024-T1-Prac3">github</a></li>
       </ul>
     </div>
   </nav>
@@ -35,13 +36,13 @@
           <img class="materialboxed materialboxed-image" src="images/livedemo.jpg" alt="livedemo" height="400px">
         </div>
         <div class="col s12 center-align">
-          <a class="waves-effect waves-light btn click-me-button" id="clickMeButton"><i
-              class="material-icons left">auto_fix_high</i>Click Me</a>
+          <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton"
+                        data-target="modal1"><i class="material-icons left">auto_fix_high</i>Click Me</a>
         </div>
       </div>
       <div class="row">
         <div class="col s4 center-align">
-          <div class="card">
+          <div class="card medium">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="images/dog.PNG" alt="dog">
             </div>
@@ -57,7 +58,7 @@
           </div>
         </div>
         <div class="col s4 center-align">
-          <div class="card">
+          <div class="card medium">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="images/dog2.PNG" alt="dog">
             </div>
@@ -73,7 +74,7 @@
           </div>
         </div>
         <div class="col s4 center-align">
-          <div class="card">
+          <div class="card medium">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="images/dog3.PNG" alt="dog">
             </div>
@@ -91,41 +92,40 @@
       </div>
     </div>
 
-    <!--modal structure-->
-    <div id="modal1" class="modal modal-fixed-footer">
-      <!-- <div id="moda-footer"> --->
-        <div class="row modal-content">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-              </div>
-              <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-              </div>
+    <!--Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer">
+            <div class="row modal-content">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 center-align">
+                            <a class="waves-effect waves-light btn" id="formSubmit">submit</a>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12 center-align">
-                <a class="waves-effect waves-light btn" id="formSubmit">submit</a>
-              </div>
-            </div>
-          </form>
         </div>
-      </div>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
